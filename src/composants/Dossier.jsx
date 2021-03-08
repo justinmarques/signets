@@ -6,7 +6,7 @@ export default function Dossier({id, titre, couleur, dateModif}) {
   return (
     <article className="Dossier" style={{backgroundColor: couleur}}>
       <div className="couverture">
-        <IconButton className="deplacer" aria-label="déplacer" disableRipple="true">
+        <IconButton className="deplacer" aria-label="déplacer" disableRipple={true}>
           <SortIcon />
         </IconButton>
         <img src={`images-dossiers/${id}.png`} alt={titre}/>
